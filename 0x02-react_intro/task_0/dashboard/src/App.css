@@ -1,0 +1,38 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  height: 30vmin;
+}
+
+.App-header {
+  display: flex;
+  text-align: center;
+  background-color: #ffffff;
+  color: #D73953;
+  border-bottom: 3px solid;
+  border-color: #D73953;
+}
+
+.App-header h1 {
+  margin-top: 70px;
+}
+
+.App-body {
+  display: flex;
+  padding-bottom: 300px;
+  text-align: left;
+  border-bottom: 3px solid;
+  border-color: #D73953;
+}
+
+.App-body p {
+  margin-top: 50px;
+  margin-left: 30px;
+}
+
+.App-footer {
+  text-align: center;
+  font-style: italic;
+}
