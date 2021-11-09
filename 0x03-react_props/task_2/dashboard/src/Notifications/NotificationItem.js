@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NotificationItem(type, html, value) {
+function NotificationItem({ type, html, value }) {
   if (html === undefined) {
     return (
       <li data-notification-type={ type }> 

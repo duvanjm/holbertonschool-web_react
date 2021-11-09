@@ -4,11 +4,11 @@
   position: relative;
 }
 
-[data-priority*='default'] {
+ul li[data-notification-type='default'] {
   color: blue;
 }
 
-[data-priority*='urgent'] {
+ul li[data-notification-type='urgent'] {
   color: red;
 }
 
