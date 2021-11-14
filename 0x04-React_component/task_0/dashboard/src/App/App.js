@@ -16,7 +16,7 @@ class App extends React.Component {
   static propTypes = {
     isLoggedIn: PropTypes.bool
   };
-  
+
   static defaultProps = {
     isLoggedIn: false
   };
