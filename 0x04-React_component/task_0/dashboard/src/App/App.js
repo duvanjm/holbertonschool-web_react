@@ -13,6 +13,14 @@ class App extends React.Component {
     super(props);
   }
 
+  static propTypes = {
+    isLoggedIn: PropTypes.bool
+  };
+  
+  static defaultProps = {
+    isLoggedIn: false
+  };
+
   render() {
     const listCourses = [
       {id: 1, name: 'ES6', credit: 60},
@@ -42,13 +50,5 @@ class App extends React.Component {
     );
   }
 }
-
-App.propTypes = {
-  isLoggedIn: PropTypes.bool
-};
-
-App.defaultProps = {
-  isLoggedIn: false
-};
 
 export default App;
