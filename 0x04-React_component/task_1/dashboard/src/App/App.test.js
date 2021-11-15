@@ -27,4 +27,14 @@ describe('<App />', () => {
   it('renders App-footer', () => {
     expect(wrapper.contains(<Footer className='App-footer' />));
   });
+  test('logOut alerts with correct string', () => {
+    const myLogOut = jest.fn(() => undefined);
+    const myAlert = jest.spyOn(global, 'alert');
+
+    const wrapper = shallow(<App logOut={myLogOut} />)
+
+    expect(myAlert);
+    expect(myLogOut);
+    jest.restoreAllMocks();
+  });
 });
