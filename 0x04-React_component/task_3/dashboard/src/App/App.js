@@ -73,7 +73,7 @@ class App extends React.Component {
             </BodySectionWithMarginBottom>
           )}
           <BodySection title="News from the School">
-            <p>Graduation date is September 17th!</p>
+            <p>some random text</p>
           </BodySection>
           <Footer className='App-footer' />
         </div>
