@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import close from '../assets/close-icon.png';
 import NotificationItemShape from './NotificationItemShape'
 import NotificationItem from './NotificationItem';
+import { StyleSheet, css } from 'aphrodite';
 import './Notifications.css';
 
 class Notifications extends React.Component {
@@ -27,9 +28,9 @@ class Notifications extends React.Component {
   render() {
     return (
       <Fragment>
-        <div className='menuItem'> Your notifications</div>
+        <div className={css(styles.menuItem)}> Your notifications</div>
         { this.props.displayDrawer && (
-          <div className='Notifications'>
+          <div className={css(styles.Notifications)}>
             {this.props.listNotifications.length > 0 ? (
               <Fragment>
               <p>Here is the list of notifications</p>
@@ -44,7 +45,7 @@ class Notifications extends React.Component {
                   />
                 ))}
               </ul>
-              <button className='close-b' aria-label="Close" onClick={ () => console.log('Close button has been clicked') }>
+              <button className={css(styles.closeB)} aria-label="Close" onClick={ () => console.log('Close button has been clicked') }>
                 <img
                 src={close} alt="close-icon"
                 style={{ height: '10px', width: '10px' }}
@@ -58,5 +59,24 @@ class Notifications extends React.Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  Notifications: {
+    border: '2px dashed #e1354b',
+    padding: '1rem',
+    width: '30%',
+    float: 'right'
+  },
+
+  closeB: {
+    position: 'absolute',
+    top: '40px',
+    right: '20px'
+  },
+  
+  menuItem: {
+    textAlign: 'end'
+  }
+});
 
 export default Notifications;
