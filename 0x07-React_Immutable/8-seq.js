@@ -5,8 +5,8 @@ export default function printBestStudents(obj) {
     .filter((student) => student.score > 70)
     .map((student) => ({
       score: student.score,
-      firstName: student.firstName,
-      lastName: student.lastName,
+      firstName: `${student.firstName.toUpperCase()}`,
+      lastName: `${student.lastName.toUpperCase()}`,
     }));
   console.log(score.toObject());
 }
